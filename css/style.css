@@ -1,0 +1,169 @@
+:root{
+    --primario: #404142;
+    --secundario: #13d14c;
+    --secundarioOscuro: #0e9b38;
+    --blanco: #ffffff;
+    --grisclaro: #aca6a6;
+    --fondo: #b3b3b3;
+    --negro: #1a1818;
+
+    --FuenteLogo: 'Robotic', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*Esto permite trabajar en REMS en el proyecto*/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background-image: url(../img/fondo-pantalla.jpg);
+    font-family: var(--FuenteLogo);
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--blanco);
+}
+
+@media(min-width: 1200px){
+    .body{
+        background-image: url(../img/fondo-pantalla-2.jpg);
+    }
+}
+
+a, p{
+    text-decoration: none;
+    text-align: center;
+    color: var(--blanco);
+}
+
+h1{
+    font-family: var(--FuenteLogo);
+    font-size: 3.5rem;
+    color: var(--blanco);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+/*Logotipo*/
+
+.contenedor{
+    background-color: var(--negro);
+    border-radius: 1.5rem;
+    width: 400px;
+    height: 520px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.logotipo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.logotipo__imagen{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 120px;
+    margin-top: 45px;
+    vertical-align: middle;
+}
+
+.logotipo__texto{
+    text-align: right;
+    margin-right: 105px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*Navegacion*/
+
+.navegacion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.sigin{
+    margin-left: 5rem;
+}
+
+.sigup{
+    margin-right: 5rem;
+}
+
+.sign--activo, .sigin:hover{
+    text-decoration-line: underline;
+    text-underline-position: under;
+    text-decoration-color: var(--secundario);
+}
+
+/*Formulario Inicio Sesion*/
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    appearance: none;
+}
+
+.formulario__usuario, 
+.formulario__contraseña{
+    border-radius: 5rem;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 1rem;
+    width: 70%;
+}
+
+/*Check*/
+.caja {
+    margin-top: 15px;
+    vertical-align: middle;
+}
+
+/*Formulario Registro*/
+
+.formulario__usuario_nuevo, 
+.formulario__correo, 
+.formulario__telefono{
+    border-radius: 5rem;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 0.8rem;
+    width: 70%;
+}
+
+
+/*Botón*/
+
+.formulario__submit{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    margin: 1rem;
+    transition: background-color .3s ease;
+    border-radius: 5rem;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 1rem;
+    width: 70%;
+    border: none;
+}
+
+.formulario__submit:hover{
+    cursor: pointer;
+    background-color: var(--secundarioOscuro) ;
+}
+
+.recordar_contraseña{
+    margin-top: 5% 
+}
+
+.recordar_contraseña__texto{
+    color: var(--grisclaro);
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,900&display=swap" rel="stylesheet">
+
+    <title>Inicio Sesion | Spotify</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <main class="logotipo">
+            <img class="logotipo__imagen" src="./img/Spotify_Logo_RGB_Green.png" alt="logo spotify">
+            <h1 class="logotipo__texto">Spotify</h1>
+        </main>
+
+        <nav class="navegacion">
+            <a class="sigin sign--activo" href="index.html">INICIAR SESION</a>
+            <a class="sigup" href="registro.html">REGISTRARSE</a>
+        </nav>
+
+        <form class="formulario">
+            <input class="formulario__usuario" type="text" placeholder="Nombre usuario">
+            <input class="formulario__contraseña" type="text" placeholder="Contraseña">
+        </form>
+        <div class="caja">
+            <input class="formulario__check" type="checkbox">
+            <label for="formulario__check">Mantener sesion iniciada</label>
+        </div>
+        <input class="formulario__submit" type="submit" value="Iniciar Sesion">
+
+        <div class="recordar_contraseña">
+            <a class="recordar_contraseña__texto" href="index.html">¿Recordar contraseña?</a>
+        </div>
+    </div>
+</body>
+</html>
